@@ -1,0 +1,145 @@
+//lab 3
+//TASK :01  SWAPPING THE ELEMENTS THROUGH POINTERS
+//void swap(int *a,int *b){
+//    int tmp=*a;
+//    *a=*b;
+//    *b=tmp;
+//    return;
+//
+//}
+//int main(){
+//    int d;
+//    printf("enter a val a:");
+//    scanf("%d",&d);
+//    int t;
+//    printf("enter a val b:");
+//    scanf("%d",&t);
+//    int *ptr=&d;
+//    int *ptr1=&t;
+//    swap(&ptr,&ptr1);
+//    printf("val of a after swaping is:%d\n",d);
+//    printf("val of b after swaping is:%d",t);
+//    return 0;
+//
+//}
+
+//TASK :2      PRINTING STRING IN REVERSE THROUGH POINTERS
+//void printstr(char *str){
+//    int maxs=strlen(str);
+//    char *ptr[maxs];
+//    for (int i=0;i<maxs;i++){
+//         ptr[i]=&str[i];
+//    }
+//    printf("Reversed string is");
+//    for(int i=maxs-1;i>=0;i--){
+//        printf(" %c",*ptr[i]);
+//    }
+//    return;
+//
+//}
+//int main(){
+//    char d[100];
+//    printf("enter a string:");
+//    scanf("%s",d);
+//    printstr(d);
+//    return 0;
+//
+//}
+//TASK :3 TAKING INPUT AND PRINTING ARRAY ELEMENTS USING POINTERS
+//int main(){
+//    int *ptrarr[100]={NULL};
+//    int i=0;
+//    while (1){
+//    int d[100];
+//    printf("ENTER A VALUE AND NEGATIVE VAL TO TERMINATE:");
+//    scanf("%d",&d[i]);
+//    if(d[i]<0){
+//        break;
+//    }
+//    else{
+//        ptrarr[i]=&d[i];
+//        i++;
+//
+//    }
+//    }
+//    printf("VALUES OF ARRAY ARE:\n");
+//    for(int j=0;j<=i;j++){
+//        printf("%d  ",*ptrarr[j]);
+//    }
+//    return 0;
+//}
+//TASK :04     SEARCH FOR AN ELEMENT IN AN ARRAY USING POINTERS
+//int main(){
+//    int *ptrarr[100]={NULL};
+//    int i=0;
+//    while (1){
+//    int d[100];
+//    printf("ENTER A VALUE AND NEGATIVE VAL TO TERMINATE:");
+//    scanf("%d",&d[i]);
+//    if(d[i]<0){
+//        break;
+//    }
+//    else{
+//        ptrarr[i]=&d[i];
+//        i++;
+//
+//    }
+//    }
+//    int ele;
+//    printf("WHICH ELEMENT DO U WANT TO SEARCH:\n");
+//    scanf("%d",&ele);
+//    for(int j=0;j<i;j++){
+//        if(*ptrarr[j]==ele){
+//            printf("THIS ELEMENT LIES ON INDEX\n%d  ",j);
+//            break;
+//        }
+//        else if(i== j+1){
+//            printf("ELEMENT DOES NOT EXIST IN THIS ARRAY <*__*>");
+//        }
+//    }
+//
+//    return 0;
+//
+//}
+//TASK :05 ADDING TWO MATRICES THROUGH POINTERS
+//void* addmat(int mat[][3],int mat1[][3],int rows){
+//     for (int i=0;i<2;i++){
+//        for(int j=0;j<3;j++){
+//            mat[i][j]=mat[i][j]+mat1[i][j];
+//        }
+//     }
+//     return mat;
+//}
+//void* cnvertmtrx_to_pointr(int mat[][3],int rows){
+//     int *ptr[2][3];
+//     for (int i=0;i<2;i++){
+//        for(int j=0;j<3;j++){
+//            *ptr [i]=&mat[i][j];
+//
+//        }
+//     }
+//     return mat;
+//}
+//int main(){
+// int mat[2][3];
+// int mat1[2][3];
+// int final_mat[2][3];
+// int matrix[2][3]={{1,2,3},{4,5,6}};
+// int matrix1[2][3]={{2,3,4},{5,6,7}};
+// cnvertmtrx_to_pointr(matrix,2);
+// cnvertmtrx_to_pointr(matrix1,2);
+// addmat(matrix,matrix1,2);
+// printf("RESULTANT MATRIX IS:\n");
+// for (int i=0;i<2;i++){
+//    for(int j=0;j<3;j++){
+//        printf("%d ",matrix[i][j]);
+//    }
+//    printf("\n");
+//    }
+// return 0;
+//
+//}
+
+
+
+
